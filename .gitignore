@@ -1,0 +1,4 @@
+# Files & Directories which will be ignored
+##########
+/databases
+/nbproject
