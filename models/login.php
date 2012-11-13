@@ -31,7 +31,7 @@ class Login{
         
         // Eingaben aus dem Formular
         $this->setUsername($_POST['username']);
-        $this->setPassword(md5($_POST['password']));
+        $this->setPassword(md5($_POST['password']));exit();
         
         try{
             // neue Datenbankverbindung herstellen
