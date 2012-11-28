@@ -49,10 +49,10 @@ class Database{
         $this->setPassword($db['password']);
         
         // Verbindungsdaten in Session speichern
-//        $_SESSION['host'] = $this->hostname;
-//        $_SESSION['db'] = $this->database;
-//        $_SESSION['user'] = $this->username;
-//        $_SESSION['pwd'] = $this->password;
+        $_SESSION['host'] = $this->hostname;
+        $_SESSION['db'] = $this->database;
+        $_SESSION['user'] = $this->username;
+        $_SESSION['pwd'] = $this->password;
     }
     
     
@@ -101,7 +101,7 @@ class Database{
      * @return String
      */
     public function getHostname(){
-        return $this->hostname;
+        return $_SESSION['host'];
     }
     
     
@@ -110,7 +110,7 @@ class Database{
      * @return String
      */
     public function getDatabase(){
-        return $this->database;
+        return $_SESSION['db'];
     }
     
     
@@ -119,7 +119,7 @@ class Database{
      * @return String
      */
     public function getUsername(){
-        return $this->username;
+        return $_SESSION['user'];
     }
     
     
@@ -128,7 +128,7 @@ class Database{
      * @return String
      */
     public function getPassword(){
-        return $this->password;
+        return $_SESSION['pwd'];
     }
 }
 
