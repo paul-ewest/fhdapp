@@ -40,10 +40,10 @@ class Login{
             
             // Abfrage
             $query = $db->query("SELECT username, password 
-                                    FROM personen 
+                                    FROM user 
                                     WHERE username = '".$this->username."'
                                     AND password = '".$this->password."'");
-            
+
             // Abfrage ausführen
             while($row = $query->fetch_assoc()){
                 $resultSet[] = $row;

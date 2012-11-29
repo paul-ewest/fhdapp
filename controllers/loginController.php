@@ -17,7 +17,7 @@ class LoginController{
      */
     public function __construct($Data){
         // Login-Modell einbinden
-        require_once '/models/login.php';
+        require_once 'models/login.php';
         // und Objekt erstellen
         new Login($Data);
     }

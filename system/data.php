@@ -28,7 +28,7 @@ class Data{
     
     
     public function __construct() {
-        require_once '/system/database.php';
+        require_once 'system/database.php';
         $this->Database = new Database();
         $this->createDbConnection();
     }
