@@ -71,7 +71,7 @@
 									</tr>
 									<tr>
 										<td >
-											<input name="anzahl" type="text" value="" size="7" maxlength="5" >
+											<input name="sort" type="text" value="" size="7" maxlength="5" >
 											
 										</td>
 									
@@ -130,7 +130,7 @@
 				require_once '../../controllers/faqController.php';
 				
 				$faq = new FaqController();
-				$faq->NamederMethode($_POST[]);
+				$faq->forwarding($_POST);
 			}
 			?>
     
