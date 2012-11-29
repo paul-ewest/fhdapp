@@ -17,7 +17,7 @@ class TestController{
      */
     public function personenauflistung(){
         // Model einbinden
-        require_once '/models/test.php';
+        require_once 'models/test.php';
         
         // Test-Objekt erstellen
         $Test = new Test();

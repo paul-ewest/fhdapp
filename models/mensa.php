@@ -9,6 +9,13 @@
  * @author Fabian Martinovic (FM), <fabian.martinovic@fh-duesseldorf.de>
  */
 
+/**
+ * Mensaklasse
+ */
+class Mensa{
+
+}
+
  
 /* End of file mensa.php */
 /* Location: ./models/mensa.php */

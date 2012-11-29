@@ -14,7 +14,7 @@ try{
     // Session starten
     session_start();
     // Data-Quelltext einbinden
-    require_once '/system/data.php';
+    require_once 'system/data.php';
     
     // Wenn noch nicht auf den Login-Button geklcikt wurde dann
     if(!isset($_POST['login'])){  
@@ -24,7 +24,7 @@ try{
         // Wenn dann darauf geklickt wurde neues Data-Objekt erstellen
         $Data = new Data();
         // den Controller einbinden
-        require_once '/controllers/loginController.php';
+        require_once 'controllers/loginController.php';
         // Controller-Instanz erstellen und das Data-Objekt übergeben
         new LoginController($Data);
     }
