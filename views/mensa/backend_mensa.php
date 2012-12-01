@@ -133,13 +133,15 @@ require_once '../../layout/frontend/header.php';
 	</table>
 </form>
 
+
+<?php
+require_once '../../layout/frontend/footer.php';
+?>
+
+
 <script href="../../sources/customjs/mensa.js"></script>
 
 
 <?php
-
-require_once '../../layout/frontend/footer.php';
-
-
 /* End of file backend_mensa.php */
 /* Location: ./views/mensa/backend_mensa.php */

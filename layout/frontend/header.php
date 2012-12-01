@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="../../sources/css/style.css" rel="stylesheet" type="text/css" media="screen" />
-<script href="../../sources/js/jquery.mobile-1.2.0.min.js"></script>
-<script href="../../sources/js/jquery-1.8.2.min.js"></script>
-<title>FHD App - Umsetzung Rahmen</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../../sources/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script href="../../sources/js/jquery-1.8.2.min.js"></script>
+    <script href="../../sources/js/jquery.mobile-1.2.0.min.js"></script>
+    <title>FHD App - Umsetzung Rahmen</title>
 </head>
 
 <body>
