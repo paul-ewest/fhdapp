@@ -67,67 +67,227 @@ require_once '../../layout/frontend/header.php';
 		</tr>
 		<tr id="bbq" class="uni_campus">
 			<td>Grill</td>
-			<td><input type="textarea" name="mon_bbq"/></td>
-			<td><input type="textarea" name="tue_bbq"/></td>
-			<td><input type="textarea" name="wed_bbq"/></td>
-			<td><input type="textarea" name="thu_bbq"/></td>
-			<td><input type="textarea" name="fri_bbq"/></td>
+			<td><input type="textarea" name="mon_bbq"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_mon_bbq"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_mon_bbq"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="tue_bbq"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_tue_bbq"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_tue_bbq"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="wed_bbq"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_wed_bbq"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_wed_bq"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="thu_bbq"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_thu_bbq"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_thu_bbq"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="fri_bbq"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_fri_bbq"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_fri_bbq"/> €</td></tr>
+				</table></td>
 		</tr>
 		<tr id="pan" class="uni_campus">
 			<td>Pfanne</td>
-			<td><input type="textarea" name="mon_pan"/></td>
-			<td><input type="textarea" name="tue_pan"/></td>
-			<td><input type="textarea" name="wed_pan"/></td>
-			<td><input type="textarea" name="thu_pan"/></td>
-			<td><input type="textarea" name="fri_pan"/></td>
+			<td><input type="textarea" name="mon_pan"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_mon_pan"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_mon_pan"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="tue_pan"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_tue_pan"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_tue_pan"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="wed_pan"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_wed_pan"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_wed_pan"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="thu_pan"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_thu_pan"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_thu_pan"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="fri_pan"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_fri_pan"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_fri_pan"/> €</td></tr>
+				</table></td>
 		</tr>
 		<tr id="wok" class="uni_campus">
 			<td>Wok</td>
-			<td><input type="textarea" name="mon_wok"/></td>
-			<td><input type="textarea" name="tue_wok"/></td>
-			<td><input type="textarea" name="wed_wok"/></td>
-			<td><input type="textarea" name="thu_wok"/></td>
-			<td><input type="textarea" name="fri_wok"/></td>
+			<td><input type="textarea" name="mon_wok"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_mon_wok"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_mon_wok"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="tue_wok"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_tue_wok"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_tue_wok"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="wed_wok"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_wed_wok"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_wed_wok"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="thu_wok"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_thu_wok"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_thu_wok"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="fri_wok"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_fri_wok"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_fri_wok"/> €</td></tr>
+				</table></td>
 		</tr>
 		<tr id="gratin" class="uni_campus">
 			<td>Wok</td>
-			<td><input type="textarea" name="mon_gratin"/></td>
-			<td><input type="textarea" name="tue_gratin"/></td>
-			<td><input type="textarea" name="wed_gratin"/></td>
-			<td><input type="textarea" name="thu_gratin"/></td>
-			<td><input type="textarea" name="fri_gratin"/></td>
+			<td><input type="textarea" name="mon_gratin"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_mon_gratin"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_mon_gratin"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="tue_gratin"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_tue_gratin"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_tue_gratin"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="wed_gratin"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_wed_gratin"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_wed_gratin"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="thu_gratin"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_thu_gratin"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_thu_gratin"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="fri_gratin"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_fri_gratin"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_fri_gratin"/> €</td></tr>
+				</table></td>
 		</tr>
 		<tr id="weekoffer" class="uni_campus">
 			<td>Wochenangebot</td>
-			<td><input type="textarea" name="mon_weekoffer"/></td>
-			<td><input type="textarea" name="tue_weekoffer"/></td>
-			<td><input type="textarea" name="wed_weekoffer"/></td>
-			<td><input type="textarea" name="thu_weekoffer"/></td>
-			<td><input type="textarea" name="fri_weekoffer"/></td>
+			<td><input type="textarea" name="mon_weekoffer"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_mon_weekoffer"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_mon_weekoffer"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="tue_weekoffer"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_tue_weekoffer"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_tue_weekoffer"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="wed_weekoffer"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_wed_weekoffer"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_wed_weekoffer"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="thu_weekoffer"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_thu_weekoffer"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_thu_weekoffer"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="fri_weekoffer"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_fri_weekoffer"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_fri_weekoffer"/> €</td></tr>
+				</table></td>
 		</tr>
 		<tr id="special" class="both_campus">
 			<td>Spezial</td>
-			<td><input type="textarea" name="mon_special"/></td>
-			<td><input type="textarea" name="tue_special"/></td>
-			<td><input type="textarea" name="wed_special"/></td>
-			<td><input type="textarea" name="thu_special"/></td>
-			<td><input type="textarea" name="fri_special"/></td>
+			<td><input type="textarea" name="mon_special"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_mon_special"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_mon_special"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="tue_special"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_tue_special"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_tue_special"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="wed_special"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_wed_special"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_wed_special"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="thu_special"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_thu_special"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_thu_special"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="fri_special"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_fri_special"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_fri_special"/> €</td></tr>
+				</table></td>
 		</tr>
 		<tr id="action" class="uni_campus">
 			<td>Aktion</td>
-			<td><input type="textarea" name="mon_action"/></td>
-			<td><input type="textarea" name="tue_action"/></td>
-			<td><input type="textarea" name="wed_action"/></td>
-			<td><input type="textarea" name="thu_action"/></td>
-			<td><input type="textarea" name="fri_action"/></td>
+			<td><input type="textarea" name="mon_action"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_mon_action"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_mon_action"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="tue_action"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_tue_action"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_tue_action"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="wed_action"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_wed_action"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_wed_action"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="thu_action"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_thu_action"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_thu_action"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="fri_action"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_fri_action"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_fri_action"/> €</td></tr>
+				</table></td>
 		</tr>
 		<tr id="green_corner" class="uni_campus">
 			<td>Green Corner</td>
-			<td><input type="textarea" name="mon_green_corner"/></td>
-			<td><input type="textarea" name="tue_green_corner"/></td>
-			<td><input type="textarea" name="wed_green_corner"/></td>
-			<td><input type="textarea" name="thu_green_corner"/></td>
-			<td><input type="textarea" name="fri_green_corner"/></td>
+			<td><input type="textarea" name="mon_green_corner"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_mon_green_corner"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_mon_green_corner"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="tue_green_corner"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_tue_green_corner"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_tue_green_corner"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="wed_green_corner"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_wed_green_corner"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_wed_green_corner"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="thu_green_corner"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_thu_green_corner"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_thu_green_corner"/> €</td></tr>
+				</table></td>
+			<td><input type="textarea" name="fri_green_corner"/>
+				<table>
+					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_fri_green_corner"/> €</td></tr>
+					<tr><td>Bed.: </td><td><input type="textfield" length="5" name="price_att_fri_green_corner"/> €</td></tr>
+				</table></td>
 		</tr>
 		<tr><td><input type="submit" name="speichern" value="Speichern"/></td></tr>
 	</table>

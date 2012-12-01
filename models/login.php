@@ -36,7 +36,7 @@ class Login{
         try{
             // neue Datenbankverbindung herstellen
             $db = new mysqli();
-            $db->connect($Data->getHostname(), $Data->getUsername(), $Data->getPassword(), $Data->getDatabase());
+            $db->connect($_SESSION['host'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']);
             
             // Abfrage
             $query = $db->query("SELECT username, password 
