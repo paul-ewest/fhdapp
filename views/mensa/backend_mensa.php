@@ -310,8 +310,8 @@ if(!isset($_SESSION['session_id'])){
 // Überprüfung ob Formular abgeschickt
 if(isset($_POST['speichern'])){
 	require_once '../../controllers/mensaController.php';
-	$Mensa = new MensaController();
-	$Mensa->callMensaInsert($_POST[]);
+	$Mensa = new $MensaController();
+	$Mensa->callInsertPlan($_POST[]);
 }
 
 ?>
