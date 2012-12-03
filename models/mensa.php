@@ -47,7 +47,7 @@ class Mensa{
 			while($row = $query->fetch_assoc()){
                 $canteens[$row['id']] = $row['name'];
             }
-            
+
 		} catch (Exception $e){
 			echo $e->getMessage();
 		}
@@ -62,7 +62,9 @@ class Mensa{
 	 */
 	public function insertPlan($post){
 		try{
-			$this->getCanteens();
+			foreach($post as $data){
+				$monday[] = preg_match_all('/^mon_/', $data);
+			}
 
 		} catch (Exception $e){
 			echo $e->getMessage();
