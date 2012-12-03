@@ -15,9 +15,11 @@
 if(!isset($_SESSION['session_id'])){
 	session_start();
 	$_SESSION['session_id'] = session_id();
-} else{
-	// include layout
-	require_once '../../layout/frontend/header.php';
+}
+
+// include layout
+require_once '../../layout/frontend/header.php';
+
 ?>
 
 
@@ -27,8 +29,8 @@ if(!isset($_SESSION['session_id'])){
 		<tr>
 			<td>Kalenderwoche:</td><td><input type="textfield" id="calenderweek" name="calenderweek" value="" /></td>
 			<td>
-				<input type="radio" id="canteen_north" name="canteens" />Mensa Nord
-				<input type="radio" id="canteen_south" name="canteens" />Mensa Universit&auml;tsstrasse
+				<input type="radio" id="canteen_north" name="canteens" value="canteen_north"/>Mensa Nord
+				<input type="radio" id="canteen_south" name="canteens" value="canteen_south"/>Mensa Universit&auml;tsstrasse
 			</td>
 		</tr>
 	</table>
@@ -158,7 +160,7 @@ if(!isset($_SESSION['session_id'])){
 				</table></td>
 		</tr>
 		<tr id="gratin" class="uni_campus">
-			<td>Wok</td>
+			<td>Gratin</td>
 			<td><input type="textarea" name="mon_gratin"/>
 				<table>
 					<tr><td>Stud.: </td><td><input type="textfield" length="5" name="price_stud_mon_gratin"/> €</td></tr>
@@ -304,7 +306,6 @@ if(!isset($_SESSION['session_id'])){
 
 <?php
 	require_once '../../layout/frontend/footer.php';
-}
 
 
 // Überprüfung ob Formular abgeschickt
