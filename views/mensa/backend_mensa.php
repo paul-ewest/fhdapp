@@ -9,10 +9,18 @@
  * @author Fabian Martinovic (FM), <fabian.martinovic@fh-duesseldorf.de>
  */
 
-// include layout
-require_once '../../layout/frontend/header.php';
 
+
+// Falls über Deeplink zugegriffen wird und Session noch nicht gestartet, diese starten
+if(!isset($_SESSION['session_id'])){
+	session_start();
+	$_SESSION['session_id'] = session_id();
+} else{
+	// include layout
+	require_once '../../layout/frontend/header.php';
 ?>
+
+
 
 <form name="mensa" method="post" action="">
 	<table>
@@ -295,7 +303,8 @@ require_once '../../layout/frontend/header.php';
 
 
 <?php
-require_once '../../layout/frontend/footer.php';
+	require_once '../../layout/frontend/footer.php';
+}
 ?>
 
 

@@ -13,6 +13,7 @@
 try{
     // Session starten
     session_start();
+    $_SESSION['session_id'] = session_id();
     
     // Wenn noch nicht auf den Login-Button geklcikt wurde dann
     if(!isset($_POST['login'])){  
