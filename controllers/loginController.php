@@ -13,13 +13,12 @@ class LoginController{
     
     /**
      * Konstruktor des Login-Controllers
-     * @param Object $Data
      */
-    public function __construct($Data){
+    public function __construct(){
         // Login-Modell einbinden
         require_once 'models/login.php';
         // und Objekt erstellen
-        new Login($Data);
+        new Login();
     }
 }
 
