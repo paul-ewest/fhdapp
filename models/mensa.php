@@ -14,14 +14,55 @@
  */
 class Mensa{
 
-	public function __construct(){}
+	/**
+	 * @var Object Database-Connection
+	 */
+	private $DbCon;
 
+	/**
+	 * @var Array $canteens Mensen
+	 */
+	private $canteens;
+
+
+
+	/**
+	 * Constructor
+	 */
+	public function __construct(){
+		// open database-connection
+		$this->DbCon = new mysqli();
+        $this->DbCon->connect($_SESSION['host'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']);
+	}
+
+
+
+	/**
+	 * Query all existing canteens
+	 */
+	public function getCanteens(){
+		try{
+			$query = $this->DbCon->query("SELECT id, name FROM canteens");
+
+			while($row = $query->fetch_assoc()){
+                $canteens[$row['id']] = $row['name'];
+            }
+            
+		} catch (Exception $e){
+			echo $e->getMessage();
+		}
+	}
+
+
+
+	/**
+	 * Insert the Plan into the database
+	 *
+	 * @param Array $post POst-Data
+	 */
 	public function insertPlan($post){
 		try{
-			// open database-connection
-			$db = new mysqli();
-            $db->connect($_SESSION['host'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']);
-
+			$this->getCanteens();
 
 		} catch (Exception $e){
 			echo $e->getMessage();
@@ -35,7 +76,7 @@ class Mensa{
  POST-Array:
 
 calenderweek:45
-canteens:canteen_north
+canteens:1
 mon_meal_one:
 tue_meal_one:
 wed_meal_one:

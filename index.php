@@ -13,18 +13,8 @@
 try{
     // Session starten
     session_start();
-    $_SESSION['session_id'] = session_id();
-    
-    // Wenn noch nicht auf den Login-Button geklcikt wurde dann
-    if(!isset($_POST['login'])){  
-        // Loginformular einbinden
-        require_once 'views/login.php';
-    } else {
-        // den Controller einbinden
-        require_once 'controllers/loginController.php';
-        // Controller-Instanz erstellen und das Data-Objekt übergeben
-        new LoginController();
-    }
+    require_once 'system/database.php';
+    new Database();
     
 } catch(Exception $error){
     // Errormessage ausgeben

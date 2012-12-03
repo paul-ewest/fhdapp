@@ -29,8 +29,8 @@ require_once '../../layout/frontend/header.php';
 		<tr>
 			<td>Kalenderwoche:</td><td><input type="textfield" id="calenderweek" name="calenderweek" value="" /></td>
 			<td>
-				<input type="radio" id="canteen_north" name="canteens" value="canteen_north"/>Mensa Nord
-				<input type="radio" id="canteen_south" name="canteens" value="canteen_south"/>Mensa Universit&auml;tsstrasse
+				<input type="radio" id="canteen_north" name="canteens" value="1"/>Mensa Nord
+				<input type="radio" id="canteen_south" name="canteens" value="2"/>Mensa Universit&auml;tsstrasse
 			</td>
 		</tr>
 	</table>
@@ -311,8 +311,8 @@ require_once '../../layout/frontend/header.php';
 // Überprüfung ob Formular abgeschickt
 if(isset($_POST['speichern'])){
 	require_once '../../controllers/mensaController.php';
-	$Mensa = new $MensaController();
-	$Mensa->callInsertPlan($_POST[]);
+	$Mensa = new MensaController();
+	$Mensa->callInsertPlan($_POST);
 }
 
 ?>

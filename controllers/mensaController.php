@@ -19,7 +19,8 @@ class MensaController{
 	 * @param Array $post
 	 */
 	public function callInsertPlan($post){
-		$MensaModel = new $Mensa();
+		require_once '../../models/mensa.php';
+		$MensaModel = new Mensa();
 		$MensaModel->insertPlan($post);
 	}
 }
