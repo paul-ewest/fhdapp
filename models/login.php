@@ -25,9 +25,8 @@ class Login{
     
     /**
      * Konstruktor der den Loginvorgang durchführt
-     * @param Object $Data
      */
-    public function __construct($Data){
+    public function __construct(){
         
         // Eingaben aus dem Formular
         $this->setUsername($_POST['username']);
@@ -37,10 +36,9 @@ class Login{
             // neue Datenbankverbindung herstellen
             $db = new mysqli();
             $db->connect($_SESSION['host'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']);
-            
             // Abfrage
             $query = $db->query("SELECT username, password 
-                                    FROM personen 
+                                    FROM user
                                     WHERE username = '".$this->username."'
                                     AND password = '".$this->password."'");
             
@@ -49,9 +47,17 @@ class Login{
                 $resultSet[] = $row;
             }
             
+            
             // Wenn Abfrage richtig (nicht leer), dann Text "Eingeloggt" ausgeben
             if(!empty($resultSet)){
-                echo 'Eingeloggt';
+
+                //terminezeugs
+                require_once 'controllers/termineController.php';
+                $appointmentController = new AppointmentController();
+                $semestersWithAppointments = $appointmentController->semestersWithAppointments();
+                require_once 'views/termine/termine.php';
+
+
             } else {
                 // ansonsten "Login falsch" ausgeben
                 echo 'Login falsch';

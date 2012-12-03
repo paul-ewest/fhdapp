@@ -13,6 +13,9 @@
 try{
     // Session starten
     session_start();
+
+    require_once 'system/database.php';
+    new Database();
     
     // Wenn noch nicht auf den Login-Button geklcikt wurde dann
     if(!isset($_POST['login'])){  
@@ -21,7 +24,7 @@ try{
     } else {
         // den Controller einbinden
         require_once 'controllers/loginController.php';
-        // Controller-Instanz erstellen und das Data-Objekt übergeben
+        // Controller-Instanz erstellen
         new LoginController();
     }
     
