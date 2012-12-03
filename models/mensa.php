@@ -20,9 +20,19 @@ class Mensa{
 	private $DbCon;
 
 	/**
-	 * @var Array $canteens Mensen
+	 * @var Array Canteens
 	 */
 	private $canteens;
+
+	/**
+	 * @var int Calenderweek
+	 */
+	private $calenderweek;
+
+	/**
+	 * @var int ID of the Canteen
+	 */
+	private $canteen_id;
 
 
 
@@ -58,14 +68,94 @@ class Mensa{
 	/**
 	 * Insert the Plan into the database
 	 *
-	 * @param Array $post POst-Data
+	 * @param Array $post Post-Data
 	 */
 	public function insertPlan($post){
-		try{
-			foreach($post as $data){
-				$monday[] = preg_match_all('/^mon_/', $data);
-			}
 
+		// Verarbeitung der POST-Daten
+		foreach($post as $key => $value){
+
+			switch($key){
+
+				//Calenderweek
+				case strstr($key, 'calenderweek');
+					$this->calenderweek;
+				break;
+
+				//Canteen-ID
+				case strstr($key, 'canteens'):
+					$this->canteen_id;
+				break;
+
+				// Monday
+				case strstr($key, 'mon_'):
+					$monday_meals[$key] = $value;
+				break;
+
+				case strstr($key, 'price_stud_mon_'):
+					$monday_stud_prices[$key] = $value;
+				break;
+
+				case strstr($key, 'price_att_mon_'):
+					$monday_att_prices[$key] = $value;
+				break;
+
+				// Tuesday
+				case strstr($key, 'tue_'):
+					$tuesday_meals[$key] = $value;
+				break;
+
+				case strstr($key, 'price_stud_tue_'):
+					$tuesday_stud_prices[$key] = $value;
+				break;
+
+				case strstr($key, 'price_att_tue_'):
+					$tuesday_att_prices[$key] = $value;
+				break;
+
+				// Wednesday
+				case strstr($key, 'wed_'):
+					$wednesday_meals[$key] = $value;
+				break;
+
+				case strstr($key, 'price_stud_wed_'):
+					$wednesday_stud_prices[$key] = $value;
+				break;
+
+				case strstr($key, 'price_att_wed_'):
+					$wednesday_att_prices[$key] = $value;
+				break;
+
+				// Thursday
+				case strstr($key, 'thu_'):
+					$thursday_meals[$key] = $value;
+				break;
+
+				case strstr($key, 'price_stud_thu_'):
+					$thursday_stud_prices[$key] = $value;
+				break;
+
+				case strstr($key, 'price_att_thu_'):
+					$thursday_att_prices[$key] = $value;
+				break;
+
+				// Friday
+				case strstr($key, 'fri_'):
+					$friday_meals[$key] = $value;
+				break;
+
+				case strstr($key, 'price_stud_fri_'):
+					$friday_stud_prices[$key] = $value;
+				break;
+
+				case strstr($key, 'price_att_fri_'):
+					$friday_att_prices[$key] = $value;
+				break;
+			}
+		}
+
+		try{
+			
 		} catch (Exception $e){
 			echo $e->getMessage();
 		}
