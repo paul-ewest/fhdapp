@@ -38,7 +38,7 @@ class FaqController{
 		$faqModel = new Faq();
 		
         // Methode ausführen und zurückgeben
-        return $faq->getFaq();
+        return $faqModel->getFaq();
     }
 }
  
