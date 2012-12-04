@@ -34,6 +34,12 @@
 		$Model = new Veranstaltungen();
 		$Model->addDatensatz();
 	}
+	
+	public function getInformation($usertype, $fachbereich)
+	{		
+		$Model = new Veranstaltungen();
+		return $Model->getInformation($usertype, $fachbereich);
+	}
 }
 
  

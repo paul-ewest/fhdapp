@@ -1,5 +1,4 @@
 <?php
- ob_start();
 
 /**
  * FHD-App
@@ -9,7 +8,7 @@
  * @link http://www.fh-duesseldorf.de
  * @author Fabian Martinovic (FM), <fabian.martinovic@fh-duesseldorf.de>
  */
-
+	ob_start();
 	require_once 'layout/frontend/header.php';
 	
 	if(isset($_GET['veranstaltung_speichern']))

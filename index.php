@@ -19,7 +19,7 @@ try
         new Database();
     }
 
-    require_once 'views/veranstaltungen/backend_veranstaltungen.php';
+    require_once 'views/veranstaltungen/veranstaltungen.php';
 }
 catch(Exception $error)
 {

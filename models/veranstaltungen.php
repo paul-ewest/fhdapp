@@ -33,6 +33,23 @@ class Veranstaltungen{
 		}
 	}
 	
+	public function getInformation($usertype, $fachbereich)
+	{
+		try
+		{
+			$result = $_SESSION['connection']->query("SELECT * FROM events");
+			
+			while($row = $result->fetch_assoc())
+			{
+				$resultSet[] = ($row['name'].';'.$row['date'].';'.$row['description']);
+			}
+			return $resultSet;
+		}
+		catch(Exception $e)
+		{
+			echo $e->getMessage();
+		}
+	}
 }
  
 /* End of file veranstaltungen.php */
