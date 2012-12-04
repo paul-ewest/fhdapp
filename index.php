@@ -15,6 +15,7 @@ try{
     session_start();
     require_once 'system/database.php';
     new Database();
+    echo "Session started";
     
 } catch(Exception $error){
     // Errormessage ausgeben
