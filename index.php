@@ -18,8 +18,17 @@ try
         require_once 'system/database.php';
         new Database();
     }
-
-    require_once 'views/veranstaltungen/veranstaltungen.php';
+	
+	if(isset($_GET['id']))
+	{
+		require_once 'views/veranstaltungen/'.$_GET['id'].'.php';
+	}
+	else
+	{
+		echo '
+		<a href="?id=backend_veranstaltungen">Veranstaltungen Backend</a><br />
+		<a href="?id=veranstaltungen">Veranstaltungen</a>';
+	}
 }
 catch(Exception $error)
 {

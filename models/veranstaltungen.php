@@ -17,11 +17,11 @@ class Veranstaltungen{
 	
 	public function addDatensatz()
 	{
-		//$lang = $_GET['veranstaltung_language'];
+		//$lang = $_POST['veranstaltung_language'];
 		$lang = 1;
-		$name = $_GET['veranstaltung_name'];
-		$datum = $_GET['veranstaltung_datum_jahr'].'-'.$_GET['veranstaltung_datum_monat'].'-'.$_GET['veranstaltung_datum_tag'];
-		$beschreibung = $_GET['veranstaltung_beschreibung'];
+		$name = $_POST['veranstaltung_name'];
+		$datum = $_POST['veranstaltung_datum_jahr'].'-'.$_POST['veranstaltung_datum_monat'].'-'.$_POST['veranstaltung_datum_tag'];
+		$beschreibung = $_POST['veranstaltung_beschreibung'];
 		
 		try
 		{

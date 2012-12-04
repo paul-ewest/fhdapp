@@ -11,7 +11,7 @@
 	ob_start();
 	require_once 'layout/frontend/header.php';
 	
-	if(isset($_GET['veranstaltung_speichern']))
+	if(isset($_POST['veranstaltung_speichern']))
 	{
 		echo 'Vielen Dank';
 		require_once 'controllers/veranstaltungenController.php';
@@ -22,7 +22,7 @@
 	else
 	{
 		echo'  
-		<form action="" method="get">
+		<form action="?id=backend_veranstaltungen" method="post">
 		
 		<table id="table_veranstaltung_backend" border="1">
 			<thead>
