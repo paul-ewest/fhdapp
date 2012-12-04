@@ -19,32 +19,7 @@ try
         new Database();
     }
 
-    // Wenn noch nicht auf den Login-Button geklickt wurde dann
-    /*if(!isset($_POST['login'])){
-	// Loginformular einbinden
-	require_once 'views/login.php';
-	} else {
-	// den Controller einbinden
-	require_once 'controllers/loginController.php';
-	// Controller-Instanz erstellen
-	new LoginController();
-	}*/
-
-
-    //get für deeplinks??
-    if(isset($_GET['page']))
-    {
-        //terminezeugs
-        require_once 'controllers/termineController.php';
-        $appointmentController = new AppointmentController();
-        $semestersWithAppointments = $appointmentController->semestersWithAppointments();
-        require_once 'views/termine/termine.php';
-    }
-    else
-    {
-        echo "<a href='index.php?page=Termine'>Termine</a>";
-    }
-    
+    require_once 'views/veranstaltungen/backend_veranstaltungen.php';
 }
 catch(Exception $error)
 {

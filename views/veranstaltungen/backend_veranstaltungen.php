@@ -10,12 +10,12 @@
  * @author Fabian Martinovic (FM), <fabian.martinovic@fh-duesseldorf.de>
  */
 
-	require_once '../../layout/frontend/header.php';
+	require_once 'layout/frontend/header.php';
 	
 	if(isset($_GET['veranstaltung_speichern']))
 	{
 		echo 'Vielen Dank';
-		require_once '../../controllers/veranstaltungenController.php';
+		require_once 'controllers/veranstaltungenController.php';
         // Controller-Instanz erstellen und das Data-Objekt übergeben
         $Controller = new VeranstaltungenController();
 		$Controller->addDatensatz();
@@ -92,7 +92,7 @@
 	}
 	
 	
-	require_once '../../layout/frontend/footer.php';
+	require_once 'layout/frontend/footer.php';
 	ob_end_flush();
 	/* End of file veranstaltungen_edit.php */
 	/* Location: ./views/veranstaltungen/veranstaltungen_edit.php */

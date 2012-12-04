@@ -17,26 +17,21 @@ class Veranstaltungen{
 	
 	public function addDatensatz()
 	{
-		 try{
-            // neue Datenbankverbindung herstellen
-            $db = new mysqli();
-            $db->connect($_SESSION['host'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']);
-            
-            // Abfrage
-            $query = $db->query("SELECT username, password 
-                                 FROM personen ");
-			// Abfrage ausführen
-            while($row = $query->fetch_assoc()){
-                echo $row;
-            }
-            
-            // Wenn Abfrage richtig (nicht leer), dann Text "Eingeloggt" ausgeben
-          
-            
-        } catch(Exception $e){
-            echo $e->getMessage();
-        }
+		try
+		{
+			$result = $_SESSION['connection']->query("SELECT * FROM user");
+			while($row = $result->fetch_assoc())
+			{
+					echo ($row['username']);
+			}
+			
+		}
+		catch(Exception $e)
+		{
+			echo $e->getMessage();
+		}
 	}
+	
 }
  
 /* End of file veranstaltungen.php */
