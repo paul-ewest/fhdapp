@@ -31,6 +31,5 @@ if(isset($_POST['login'])){
 	new LoginController($_POST);
 }
 
-
 /* End of file login.php */
 /* Location: ./login.php */

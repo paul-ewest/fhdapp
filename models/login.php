@@ -39,7 +39,7 @@ class Login{
         // Eingaben aus dem Formular
         $this->setUsername($post['username']);
         $this->setPassword(md5($post['password']));
-        $this->getConnection();
+        $this->setConnection();
         $this->login();
     }
 
@@ -102,8 +102,8 @@ class Login{
      * Connection setzen
      * @param String $password
      */
-    public function getConnection() {
-        $this->Connection = $_SESSION['con'];
+    public function setConnection() {
+        $this->Connection = $_SESSION['connection'];
     }
 }
  
