@@ -33,9 +33,6 @@ class Login{
         $this->setPassword(md5($_POST['password']));
         
         try{
-            // neue Datenbankverbindung herstellen
-            $db = new mysqli();
-            //$db->connect($_SESSION['host'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']);
             // Abfrage
             $query = $_SESSION['connection']->query("SELECT username, password 
                                     FROM user
