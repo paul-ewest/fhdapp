@@ -17,14 +17,15 @@ class Veranstaltungen{
 	
 	public function addDatensatz()
 	{
+		//$lang = $_GET['veranstaltung_language'];
+		$lang = 1;
+		$name = $_GET['veranstaltung_name'];
+		$datum = $_GET['veranstaltung_datum_jahr'].'-'.$_GET['veranstaltung_datum_monat'].'-'.$_GET['veranstaltung_datum_tag'];
+		$beschreibung = $_GET['veranstaltung_beschreibung'];
+		
 		try
 		{
-			$result = $_SESSION['connection']->query("SELECT * FROM user");
-			while($row = $result->fetch_assoc())
-			{
-					echo ($row['username']);
-			}
-			
+			$_SESSION['connection']->query("INSERT INTO events (language_id,name,date,description) VALUES ('".$lang."', '".$name."', '".$datum." 00:00:00', '".$beschreibung."');");
 		}
 		catch(Exception $e)
 		{

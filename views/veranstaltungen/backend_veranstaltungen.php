@@ -51,7 +51,10 @@
 			<tr>
 			 <td>Datum:</td>
 			  <td>
-			  <input name="veranstaltung_datum" id="veranstaltung_datum" type="text" size="50" maxlength="30">
+			  <input name="veranstaltung_datum_tag" id="veranstaltung_datum_tag" type="text" size="5" maxlength="2">
+			  <input name="veranstaltung_datum_monat" id="veranstaltung_datum_monat" type="text" size="5" maxlength="2">
+			  <input name="veranstaltung_datum_jahr" id="veranstaltung_datum_jahr" type="text" size="10" maxlength="4">
+			  (DD-MM-YYYY)
 			  </td>
 			</tr>
 			
