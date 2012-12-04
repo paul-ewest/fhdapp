@@ -10,5 +10,34 @@
  */
 
  
+ class VeranstaltungenController{
+    /**
+     * Benutzername
+     * @var String 
+     */
+    private $Model;
+	
+	
+    /**
+     * Konstruktor des VeranstaltungsController
+     * @param Object $Data
+     */
+    public function __construct(){
+        // Veranstaltung-Modell einbinden
+        require_once '../../models/veranstaltungen.php';
+        // und Objekt erstellen
+        $Model = new Veranstaltungen();
+    }
+	
+	public function addDatensatz()
+	{		
+		$Model = new Veranstaltungen();
+		$Model->addDatensatz();
+	}
+}
+
+ 
+ 
 /* End of file veranstaltungenController.php */
 /* Location: ./controllers/veranstaltungenController.php */
+?>
