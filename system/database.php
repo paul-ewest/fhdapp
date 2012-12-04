@@ -53,6 +53,8 @@ class Database{
         $_SESSION['db'] = $this->database;
         $_SESSION['user'] = $this->username;
         $_SESSION['pwd'] = $this->password;
+
+        $_SESSION['connection'] = new mysqli($_SESSION['host'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']);
     }
     
     

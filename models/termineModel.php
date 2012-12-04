@@ -5,9 +5,9 @@
 		{
 			try
 			{
-				$db = new mysqli($_SESSION['host'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']);
+				//$db = new mysqli($_SESSION['host'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']);
 
-				$result = $db->query("SELECT * FROM semester");
+				$result = $_SESSION['connection']->query("SELECT * FROM semester");
 				while($row = $result->fetch_assoc())
 				{
 					$resultSet[] = new Semester($row["id"], $row["name"]);
@@ -24,9 +24,9 @@
 		{
 			try
 			{
-				$db = new mysqli($_SESSION['host'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']);
+				//$db = new mysqli($_SESSION['host'], $_SESSION['user'], $_SESSION['pwd'], $_SESSION['db']);
 				
-				$result = $db->query("SELECT * FROM appointments WHERE semester_id = $semester_id");
+				$result = $_SESSION['connection']->query("SELECT * FROM appointments WHERE semester_id = $semester_id");
 				while($row = $result->fetch_assoc())
 				{
 					$resultSet[] = $row;
