@@ -4,7 +4,7 @@
 		public function __construct()
 		{
 			//appointmentModel instanziieren
-			require_once '/models/termineModel.php';
+			require_once 'models/termineModel.php';
 			$this->appointmentModel = new AppointmentModel();
 		}
 				

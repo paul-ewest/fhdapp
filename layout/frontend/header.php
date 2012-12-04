@@ -1,12 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="../../sources/css/style.css" rel="stylesheet" type="text/css" media="screen" />
-    <script href="../../sources/js/jquery-1.8.2.min.js"></script>
-    <script href="../../sources/js/jquery.mobile-1.2.0.min.js"></script>
-    <title>FHD App - Umsetzung Rahmen</title>
+    <link href="sources/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="sources/css/jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="sources/css/jquery.mobile-fhd.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="sources/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="sources/js/jquery.mobile-1.2.0.min.js"></script>
+    <title>FHD WebApp</title>
 </head>
 
 <body>

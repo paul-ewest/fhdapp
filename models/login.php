@@ -47,14 +47,8 @@ class Login{
             
             // Wenn Abfrage richtig (nicht leer), dann Text "Eingeloggt" ausgeben
             if(!empty($resultSet)){
-
-                //terminezeugs
-                require_once 'controllers/termineController.php';
-                $appointmentController = new AppointmentController();
-                $semestersWithAppointments = $appointmentController->semestersWithAppointments();
-                require_once 'views/termine/termine.php';
-
-
+                //eingeloggt
+                echo 'Login richtig';
             } else {
                 // ansonsten "Login falsch" ausgeben
                 echo 'Login falsch';
